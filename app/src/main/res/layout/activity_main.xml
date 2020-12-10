@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/testTextBox"
+        android:id="@+id/editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -16,22 +16,23 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/edit_message"
-        app:layout_constraintEnd_toStartOf="@+id/testButton"
+        app:layout_constraintEnd_toStartOf="@+id/editTextButton"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/testButton"
+        android:id="@+id/editTextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:onClick="sendMessage"
         android:text="@string/button_send"
-        app:layout_constraintBaseline_toBaselineOf="@+id/testTextBox"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/testTextBox" />
+        app:layout_constraintStart_toEndOf="@+id/editText" />
 </androidx.constraintlayout.widget.ConstraintLayout>
